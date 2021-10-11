@@ -1,0 +1,29 @@
+PODS:
+  - FastDraw (0.0.1):
+    - SQLite.swift (~> 0.12.0)
+    - SwiftProtobuf (~> 1.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - SwiftProtobuf (1.15.0)
+
+DEPENDENCIES:
+  - FastDraw (from `..`)
+
+SPEC REPOS:
+  trunk:
+    - SQLite.swift
+    - SwiftProtobuf
+
+EXTERNAL SOURCES:
+  FastDraw:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  FastDraw: 569ff5b42ec0c8faba46d901fdcfd81b7790ebc5
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
+
+PODFILE CHECKSUM: cadf70def8b740971e31a773718643c58c5d5af9
+
+COCOAPODS: 1.8.3

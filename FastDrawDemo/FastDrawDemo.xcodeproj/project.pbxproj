@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA785904F28C57CDD0C4669B /* Pods_FastDrawDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49FEB27CE4F2F1FF0EBBD5B /* Pods_FastDrawDemo.framework */; };
+		F02E2E5D25D7B91E0043A76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E2E5C25D7B91E0043A76D /* AppDelegate.swift */; };
+		F02E2E5F25D7B91E0043A76D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E2E5E25D7B91E0043A76D /* SceneDelegate.swift */; };
+		F02E2E6125D7B91E0043A76D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E2E6025D7B91E0043A76D /* ViewController.swift */; };
+		F02E2E6425D7B91E0043A76D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02E2E6225D7B91E0043A76D /* Main.storyboard */; };
+		F02E2E6625D7B9200043A76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F02E2E6525D7B9200043A76D /* Assets.xcassets */; };
+		F02E2E6925D7B9200043A76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02E2E6725D7B9200043A76D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56FBBB8E4EC78FF19E176391 /* Pods-FastDrawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastDrawDemo.debug.xcconfig"; path = "Target Support Files/Pods-FastDrawDemo/Pods-FastDrawDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		71BB1DDD561DF57BBFDBAD15 /* Pods-FastDrawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastDrawDemo.release.xcconfig"; path = "Target Support Files/Pods-FastDrawDemo/Pods-FastDrawDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C49FEB27CE4F2F1FF0EBBD5B /* Pods_FastDrawDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastDrawDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02E2E5925D7B91E0043A76D /* FastDrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastDrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02E2E5C25D7B91E0043A76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F02E2E5E25D7B91E0043A76D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F02E2E6025D7B91E0043A76D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F02E2E6325D7B91E0043A76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F02E2E6525D7B9200043A76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F02E2E6825D7B9200043A76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F02E2E6A25D7B9200043A76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F02E2E7625D7BA710043A76D /* FastDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FastDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F02E2E5625D7B91E0043A76D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA785904F28C57CDD0C4669B /* Pods_FastDrawDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DD9964D82C3DB42211835BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56FBBB8E4EC78FF19E176391 /* Pods-FastDrawDemo.debug.xcconfig */,
+				71BB1DDD561DF57BBFDBAD15 /* Pods-FastDrawDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2EBB3610DB81E112F9CB703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F02E2E7625D7BA710043A76D /* FastDraw.framework */,
+				C49FEB27CE4F2F1FF0EBBD5B /* Pods_FastDrawDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F02E2E5025D7B91E0043A76D = {
+			isa = PBXGroup;
+			children = (
+				F02E2E5B25D7B91E0043A76D /* FastDrawDemo */,
+				F02E2E5A25D7B91E0043A76D /* Products */,
+				7DD9964D82C3DB42211835BF /* Pods */,
+				A2EBB3610DB81E112F9CB703 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F02E2E5A25D7B91E0043A76D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F02E2E5925D7B91E0043A76D /* FastDrawDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F02E2E5B25D7B91E0043A76D /* FastDrawDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F02E2E5C25D7B91E0043A76D /* AppDelegate.swift */,
+				F02E2E5E25D7B91E0043A76D /* SceneDelegate.swift */,
+				F02E2E6025D7B91E0043A76D /* ViewController.swift */,
+				F02E2E6225D7B91E0043A76D /* Main.storyboard */,
+				F02E2E6525D7B9200043A76D /* Assets.xcassets */,
+				F02E2E6725D7B9200043A76D /* LaunchScreen.storyboard */,
+				F02E2E6A25D7B9200043A76D /* Info.plist */,
+			);
+			path = FastDrawDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F02E2E5825D7B91E0043A76D /* FastDrawDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F02E2E6D25D7B9200043A76D /* Build configuration list for PBXNativeTarget "FastDrawDemo" */;
+			buildPhases = (
+				32C90214E3F1389C9A57AAC2 /* [CP] Check Pods Manifest.lock */,
+				F02E2E5525D7B91E0043A76D /* Sources */,
+				F02E2E5625D7B91E0043A76D /* Frameworks */,
+				F02E2E5725D7B91E0043A76D /* Resources */,
+				31B1F99BEC12968BE359A384 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastDrawDemo;
+			productName = FastDrawDemo;
+			productReference = F02E2E5925D7B91E0043A76D /* FastDrawDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F02E2E5125D7B91E0043A76D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F02E2E5825D7B91E0043A76D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F02E2E5425D7B91E0043A76D /* Build configuration list for PBXProject "FastDrawDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F02E2E5025D7B91E0043A76D;
+			productRefGroup = F02E2E5A25D7B91E0043A76D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F02E2E5825D7B91E0043A76D /* FastDrawDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F02E2E5725D7B91E0043A76D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02E2E6925D7B9200043A76D /* LaunchScreen.storyboard in Resources */,
+				F02E2E6625D7B9200043A76D /* Assets.xcassets in Resources */,
+				F02E2E6425D7B91E0043A76D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B1F99BEC12968BE359A384 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastDrawDemo/Pods-FastDrawDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastDrawDemo/Pods-FastDrawDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastDrawDemo/Pods-FastDrawDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32C90214E3F1389C9A57AAC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastDrawDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F02E2E5525D7B91E0043A76D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02E2E6125D7B91E0043A76D /* ViewController.swift in Sources */,
+				F02E2E5D25D7B91E0043A76D /* AppDelegate.swift in Sources */,
+				F02E2E5F25D7B91E0043A76D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F02E2E6225D7B91E0043A76D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F02E2E6325D7B91E0043A76D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F02E2E6725D7B9200043A76D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F02E2E6825D7B9200043A76D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F02E2E6B25D7B9200043A76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F02E2E6C25D7B9200043A76D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F02E2E6E25D7B9200043A76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56FBBB8E4EC78FF19E176391 /* Pods-FastDrawDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN7CA88254;
+				INFOPLIST_FILE = FastDrawDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.FastDrawDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F02E2E6F25D7B9200043A76D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BB1DDD561DF57BBFDBAD15 /* Pods-FastDrawDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GN7CA88254;
+				INFOPLIST_FILE = FastDrawDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "---.FastDrawDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F02E2E5425D7B91E0043A76D /* Build configuration list for PBXProject "FastDrawDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02E2E6B25D7B9200043A76D /* Debug */,
+				F02E2E6C25D7B9200043A76D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F02E2E6D25D7B9200043A76D /* Build configuration list for PBXNativeTarget "FastDrawDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02E2E6E25D7B9200043A76D /* Debug */,
+				F02E2E6F25D7B9200043A76D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F02E2E5125D7B91E0043A76D /* Project object */;
+}
