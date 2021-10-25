@@ -4,7 +4,12 @@ A Fast and Complete Swift Drawing Library
 
 ## Description
 
-FastDraw is a **high performance** and **highly extensible** Drawing Library that supports **Apple Pencil**. It supports **pencil**, **highlighter**, **eraser**, and **lasso**. 
+FastDraw is a **high performance** and **highly extensible** Drawing Library that supports **Apple Pencil**. 
+### Features
+- pencil and highlighter, color and width selection
+- eraser
+- lasso
+- export to `sqlite`, `pdf`, `png`
 
 Here is a the demo of FastDraw
 
@@ -56,11 +61,25 @@ Try out the FastDrawDemo
 
 Try the app powered by FastDraw [CoCreate](https://apps.apple.com/us/app/cocreate-draw-together/id1548911886). 
 
-### Installing
+## Installation
+
+### CocoaPods
+
+Create `Podfile` and add pod `FastDraw`:
 
 ```
-pod 'FastDraw', :git => 'https://github.com/collinzrj/FastDraw.git', :commit => "33ed685f73b8adae8ab1ca26e5f028f8ef1cd406"
+use_frameworks!
+
+target 'YourApp' do
+    pod 'FastDraw'
+end
 ```
+
+Install pods:
+```
+pod install
+```
+
 
 ## Help
 
@@ -73,4 +92,4 @@ Collin Zhang
 
 ## License
 
-This project is licensed under the [MIT] License - see the LICENSE.md file for details
+MIT
