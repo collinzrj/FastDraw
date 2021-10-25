@@ -13,6 +13,45 @@ https://user-images.githubusercontent.com/44433088/138016576-04e9864b-1680-459e-
 
 ## Getting Started
 
+Add a basic DrawBoard
+
+```
+import UIKit
+import FastDraw
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let drawboardview = DrawBoardView(frame: CGRect(origin: CGPoint(x: 0, y: 100),
+                                                    size: view.frame.size))
+        drawboardview.setupDrawing()
+        self.view.addSubview(drawboardview)
+    }
+}
+```
+
+Update Brush type and color anywhere you like
+
+```
+import UIKit
+import FastDraw
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let drawboardview = DrawBoardView(frame: CGRect(origin: CGPoint(x: 0, y: 100),
+                                                    size: view.frame.size))
+        drawboardview.setupDrawing()
+        self.view.addSubview(drawboardview)
+        Brush.shared.type = .pen
+        Brush.shared.color = .red
+        Brush.shared.width = 10
+    }
+}
+```
+
 Try out the FastDrawDemo
 
 Try the app powered by FastDraw [CoCreate](https://apps.apple.com/us/app/cocreate-draw-together/id1548911886). 
