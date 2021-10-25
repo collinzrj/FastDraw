@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
 
   spec.source_files  = "FastDraw/**/*.swift"
-  spec.source       = { :git => 'https://github.com/collinzrj/FastDraw', :tag => '0.0.1' }
+  spec.source       = { :git => 'https://github.com/collinzrj/FastDraw.git', :tag => 'v0.1.0-alpha' }
   spec.swift_version = '5.0'
 
 end
