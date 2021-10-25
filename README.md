@@ -1,3 +1,4 @@
+![Cocoapods](https://img.shields.io/cocoapods/v/FastDraw)
 # FastDraw
 
 A Fast and Complete Swift Drawing Library
