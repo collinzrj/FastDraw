@@ -1,11 +1,11 @@
 ![Cocoapods](https://img.shields.io/cocoapods/v/FastDraw)
 # FastDraw
 
-A Fast and Complete Swift Drawing Library
+A Fast and Complete Swift Drawing(Handwriting) Library
 
 ## Description
 
-FastDraw is a **high performance** and **highly extensible** Drawing Library that supports **Apple Pencil**. 
+FastDraw is a **high performance** and **highly extensible** Drawing(Handwriting) Library that supports **Apple Pencil**. 
 ### Features
 - pencil and highlighter, color and width selection
 - eraser
