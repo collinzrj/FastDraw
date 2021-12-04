@@ -81,6 +81,20 @@ Install pods:
 pod install
 ```
 
+## Usage
+Export to PDF/Image
+```
+// drawboardview is a view you have setup before
+
+// export current drawing to URL
+drawboardview.drawPDF(url: URL)
+drawboardview.drawImage(url: URL)
+
+// export current drawing to URL with background
+// use these methods if you have provided a pdf as background of the UIView
+drawboardview.drawPDF(pdfpage: CGPDFPage, url: URL)
+drawboardview.drawImage(pdfpage: CGPDFPage, url: URL)
+```
 
 ## Help
 
