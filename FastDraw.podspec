@@ -8,7 +8,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FastDraw"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "A Fast and Complete Swift Drawing Library."
   spec.description  = "FastDraw is a high performance and highly extensible Drawing Library that supports Apple Pencil. It supports pencil, highlighter, eraser, and lasso."
   spec.ios.deployment_target = '11.0'
@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
 
   spec.source_files  = "FastDraw/**/*.swift"
-  spec.source       = { :git => 'https://github.com/collinzrj/FastDraw.git', :tag => 'v0.1.0-alpha' }
+  spec.source       = { :git => 'https://github.com/collinzrj/FastDraw.git', :tag => 'v0.1.1-alpha' }
   spec.swift_version = '5.0'
 
 end
