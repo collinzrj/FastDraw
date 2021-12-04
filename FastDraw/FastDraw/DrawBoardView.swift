@@ -104,8 +104,16 @@ public class DrawBoardView: UIView {
         segmentmap?.drawPDF(pdfpage: pdfpage, path: path)
     }
     
+    public func drawPDF(url: URL) {
+        segmentmap?.drawPDF(frame: frame, url: url)
+    }
+    
     public func drawImage(pdfpage: CGPDFPage, url: URL) {
         segmentmap?.drawImage(pdfpage: pdfpage, url: url)
+    }
+    
+    public func drawImage(url: URL) {
+        segmentmap?.drawImage(frame: frame, url: url)
     }
     
     //MARK: Override Functions

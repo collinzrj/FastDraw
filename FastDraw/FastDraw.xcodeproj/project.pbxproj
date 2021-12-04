@@ -20,7 +20,6 @@
 		F03C9F8226344F3300A30845 /* TransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F7B26344F3300A30845 /* TransformView.swift */; };
 		F03C9F8326344F3300A30845 /* StrokeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F7C26344F3300A30845 /* StrokeDatabase.swift */; };
 		F03C9F8426344F3300A30845 /* Supplementary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F7D26344F3300A30845 /* Supplementary.swift */; };
-		F03C9F8526344F3400A30845 /* SegmentDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F7E26344F3300A30845 /* SegmentDatabase.swift */; };
 		F03C9F8626344F3400A30845 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F7F26344F3300A30845 /* Operation.swift */; };
 		F03C9F8726344F3400A30845 /* StrokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F8026344F3300A30845 /* StrokeModel.swift */; };
 		F03C9F8826344F3400A30845 /* StrokeSegmentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C9F8126344F3300A30845 /* StrokeSegmentMap.swift */; };
@@ -42,7 +41,6 @@
 		F03C9F7B26344F3300A30845 /* TransformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformView.swift; sourceTree = "<group>"; };
 		F03C9F7C26344F3300A30845 /* StrokeDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeDatabase.swift; sourceTree = "<group>"; };
 		F03C9F7D26344F3300A30845 /* Supplementary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supplementary.swift; sourceTree = "<group>"; };
-		F03C9F7E26344F3300A30845 /* SegmentDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentDatabase.swift; sourceTree = "<group>"; };
 		F03C9F7F26344F3300A30845 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		F03C9F8026344F3300A30845 /* StrokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeModel.swift; sourceTree = "<group>"; };
 		F03C9F8126344F3300A30845 /* StrokeSegmentMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeSegmentMap.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				F00D458125D4D31200287E0B /* FastDraw.h */,
 				F03C9F7926344F1D00A30845 /* GestureRecognizerModel.swift */,
 				F03C9F7F26344F3300A30845 /* Operation.swift */,
-				F03C9F7E26344F3300A30845 /* SegmentDatabase.swift */,
 				F03C9F7C26344F3300A30845 /* StrokeDatabase.swift */,
 				F03C9F8026344F3300A30845 /* StrokeModel.swift */,
 				F03C9F8126344F3300A30845 /* StrokeSegmentMap.swift */,
@@ -220,7 +217,6 @@
 				F03C9F7626344F1500A30845 /* DrawActiveView.swift in Sources */,
 				F03C9F8826344F3400A30845 /* StrokeSegmentMap.swift in Sources */,
 				F03C9F7326344F1500A30845 /* base.pb.swift in Sources */,
-				F03C9F8526344F3400A30845 /* SegmentDatabase.swift in Sources */,
 				F03C9F7226344F1500A30845 /* EraserView.swift in Sources */,
 				F03C9F8626344F3400A30845 /* Operation.swift in Sources */,
 				F03C9F8226344F3300A30845 /* TransformView.swift in Sources */,

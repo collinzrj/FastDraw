@@ -399,111 +399,56 @@ class StrokeSegmentMap {
         let renderer = UIGraphicsImageRenderer(size: pageFrame.size)
         let image = renderer.image { context in
             let ctx = context.cgContext
-            
             UIColor.white.setFill()
             ctx.fill(CGRect(origin: .zero, size: pageFrame.size))
-            
             ctx.saveGState()
             ctx.scaleBy(x: 1, y: -1)
             ctx.translateBy(x: 0, y: -pageFrame.size.height)
             ctx.drawPDFPage(pdfpage)
             ctx.restoreGState()
-            
-            for stroke in getAllStrokes() {
-                let segments = getSegmentsFromTable(id: stroke)
-                if !segments.isEmpty {
-                    let color = segments[0].color
-                    var red: CGFloat = 0
-                    var green: CGFloat = 0
-                    var blue: CGFloat = 0
-                    var alpha: CGFloat = 0
-                    color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-                    
-                    if alpha < 1 {
-                        let path = UIBezierPath()
-                        let firstSegment = segments[0]
-                        let width = distance(firstSegment.start_lower_point,
-                                             firstSegment.start_upper_point)
-                        let firstPoint = getMidPoint(firstPoint: firstSegment.start_lower_point,
-                                                     secondPoint: firstSegment.start_upper_point)
-                        for segment in segments {
-                            let startPoint = getMidPoint(firstPoint: segment.start_upper_point,
-                                                         secondPoint: segment.start_lower_point)
-                            let endPoint = getMidPoint(firstPoint: segment.end_lower_point,
-                                                       secondPoint: segment.end_upper_point)
-                            path.move(to: startPoint)
-                            path.addLine(to: endPoint)
-                        }
-                        path.lineWidth = width
-                        path.lineCapStyle = .round
-                        path.lineJoinStyle = .round
-                        color.setStroke()
-                        path.stroke()
-                    } else {
-                        for segment in segments {
-                            color.setFill()
-                            segment.paths[0].fill()
-                        }
-                    }
-                }
-            }
+            contextDrawStrokes()
         }
         let data = image.pngData()
         try? data?.write(to: url)
     }
     
-    func drawPDF(pdfpage: CGPDFPage, path: String) {
-        UIGraphicsBeginPDFContextToFile(path, CGRect.zero, nil)
+    func drawImage(frame: CGRect, url: URL) {
+        let renderer = UIGraphicsImageRenderer(size: frame.size)
+        let image = renderer.image { context in
+            UIColor.white.setFill()
+            context.cgContext.fill(CGRect(origin: .zero, size: frame.size))
+            contextDrawStrokes()
+        }
+        let data = image.pngData()
+        try? data?.write(to: url)
+    }
+    
+    func drawPDF(pdfpage: CGPDFPage, url: URL) {
+        UIGraphicsBeginPDFContextToFile(url.path, CGRect.zero, nil)
         let pageFrame = pdfpage.getBoxRect(.mediaBox)
         UIGraphicsBeginPDFPageWithInfo(pageFrame, nil)
         guard let ctx = UIGraphicsGetCurrentContext() else { return }
-        
         ctx.saveGState()
-        
         ctx.scaleBy(x: 1, y: -1)
-        
         ctx.translateBy(x: 0, y: -pageFrame.size.height)
         ctx.drawPDFPage(pdfpage)
         ctx.restoreGState()
-
-        for stroke in getAllStrokes() {
-            let segments = getSegmentsFromTable(id: stroke)
-            if !segments.isEmpty {
-                let color = segments[0].color
-                var red: CGFloat = 0
-                var green: CGFloat = 0
-                var blue: CGFloat = 0
-                var alpha: CGFloat = 0
-                color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-                
-                if alpha < 1 {
-                    let path = UIBezierPath()
-                    let firstSegment = segments[0]
-                    let width = distance(firstSegment.start_lower_point,
-                                         firstSegment.start_upper_point)
-                    for segment in segments {
-                        let startPoint = getMidPoint(firstPoint: segment.start_upper_point,
-                                                     secondPoint: segment.start_lower_point)
-                        let endPoint = getMidPoint(firstPoint: segment.end_lower_point,
-                                                   secondPoint: segment.end_upper_point)
-                        path.move(to: startPoint)
-                        path.addLine(to: endPoint)
-                    }
-                    path.lineWidth = width
-                    path.lineCapStyle = .round
-                    path.lineJoinStyle = .round
-                    color.setStroke()
-                    path.stroke()
-                } else {
-                    for segment in segments {
-                        color.setFill()
-                        segment.paths[0].fill()
-                    }
-                }
-            }
-        }
-        
+        contextDrawStrokes()
         UIGraphicsEndPDFContext()
+    }
+    
+    func drawPDF(frame: CGRect, url: URL) {
+        UIGraphicsBeginPDFContextToFile(url.path, CGRect.zero, nil)
+        UIGraphicsBeginPDFPageWithInfo(frame, nil)
+        contextDrawStrokes()
+        UIGraphicsEndPDFContext()
+    }
+
+    // backward compatibility
+    func drawPDF(pdfpage: CGPDFPage, path: String) {
+        if let url = URL(string: path) {
+            drawPDF(pdfpage: pdfpage, url: url)
+        }
     }
     
     //MARK: INTERNAL FUNCTIONS
@@ -1053,5 +998,44 @@ class StrokeSegmentMap {
             }
         }
         return line_dict
+    }
+    
+    private func contextDrawStrokes() {
+        for stroke in getAllStrokes() {
+            let segments = getSegmentsFromTable(id: stroke)
+            if !segments.isEmpty {
+                let color = segments[0].color
+                var red: CGFloat = 0
+                var green: CGFloat = 0
+                var blue: CGFloat = 0
+                var alpha: CGFloat = 0
+                color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+                
+                if alpha < 1 {
+                    let path = UIBezierPath()
+                    let firstSegment = segments[0]
+                    let width = distance(firstSegment.start_lower_point,
+                                         firstSegment.start_upper_point)
+                    for segment in segments {
+                        let startPoint = getMidPoint(firstPoint: segment.start_upper_point,
+                                                     secondPoint: segment.start_lower_point)
+                        let endPoint = getMidPoint(firstPoint: segment.end_lower_point,
+                                                   secondPoint: segment.end_upper_point)
+                        path.move(to: startPoint)
+                        path.addLine(to: endPoint)
+                    }
+                    path.lineWidth = width
+                    path.lineCapStyle = .round
+                    path.lineJoinStyle = .round
+                    color.setStroke()
+                    path.stroke()
+                } else {
+                    for segment in segments {
+                        color.setFill()
+                        segment.paths[0].fill()
+                    }
+                }
+            }
+        }
     }
 }
