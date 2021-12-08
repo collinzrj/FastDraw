@@ -100,6 +100,16 @@ drawboardview.drawImage(pdfpage: CGPDFPage, url: URL)
 
 Send me an email and I will answer your question and fix problem for you as soon as possible, or you can create an issue if you meet any problems
 
+## Contribution
+
+Contribution is always welcomed! You can create an issue or pull request if you found a bug/implement a new feature/willing to improve the doc.
+
+## Roadmap
+- [] Toolbox to set brush
+- [] Stresstest function for FastDrawDemo
+- [] Improve performance of drawing
+- [] Documentation
+
 ## Authors
 
 Collin Zhang
