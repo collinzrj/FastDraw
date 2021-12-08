@@ -105,10 +105,10 @@ Send me an email and I will answer your question and fix problem for you as soon
 Contribution is always welcomed! You can create an issue or pull request if you found a bug/implement a new feature/willing to improve the doc.
 
 ## Roadmap
-- [] Toolbox to set brush
-- [] Stresstest function for FastDrawDemo
-- [] Improve performance of drawing
-- [] Documentation
+- [ ] Toolbox to set brush
+- [ ] Stresstest function for FastDrawDemo
+- [ ] Improve performance of drawing
+- [ ] Documentation
 
 ## Authors
 
